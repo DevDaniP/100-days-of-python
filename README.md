@@ -19,4 +19,6 @@ every i in function
 * lots of good practice 
 ## day 8 
 * common things we forget are that upper and lower are calls ()
-* and that whne youre adding to a list you need to +=
+* some extra work from indexing would be a good idea 
+## day 9 
+* 
