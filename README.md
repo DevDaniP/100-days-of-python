@@ -16,5 +16,7 @@ every i in function
 ## day 6 
 * robot assignment online 
 ## day 7 hangman project 
-
-## 
+* lots of good practice 
+## day 8 
+* common things we forget are that upper and lower are calls ()
+* and that whne youre adding to a list you need to +=
