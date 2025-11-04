@@ -20,5 +20,5 @@ every i in function
 ## day 8 
 * common things we forget are that upper and lower are calls ()
 * some extra work from indexing would be a good idea 
-## day 9 
-* 
+## day 10
+* we learned a valuable lesson about how functions can be called as values within a dictionary!
