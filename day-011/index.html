@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🃏 Blackjack 🃏</h1>
+        
+        <div class="hands">
+            <div class="hand">
+                <h2>Dealer</h2>
+                <div class="cards" id="dealerCards"></div>
+                <div class="total" id="dealerTotal"></div>
+            </div>
+            
+            <div class="hand">
+                <h2>You</h2>
+                <div class="cards" id="playerCards"></div>
+                <div class="total" id="playerTotal"></div>
+            </div>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <div class="controls">
+            <button id="hitBtn" onclick="hit()">Hit</button>
+            <button id="stayBtn" onclick="stay()">Stay</button>
+            <button id="newGameBtn" onclick="newGame()" style="display:none;">New Game</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="ace-choice" id="aceChoice">
+        <h3>You got an Ace!</h3>
+        <p>Would you like it to count as 1 or 11?</p>
+        <button onclick="chooseAce(1)">1</button>
+        <button onclick="chooseAce(11)">11</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
