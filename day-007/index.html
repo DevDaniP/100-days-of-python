@@ -68,13 +68,13 @@
         }
         
         .word-display {
-            font-size: 36px;
+            font-size: 30px;
             text-align: center;
-            letter-spacing: 10px;
+            letter-spacing: 0px;
             margin: 30px 0;
             color: #333;
             font-weight: bold;
-            white-space: nowrap;
+            white-space: pre;
             overflow-x: auto;
         }
         
@@ -335,10 +335,13 @@
         function initGame() {
             const words = wordCategories[currentCategory];
             chosenWord = words[Math.floor(Math.random() * words.length)];
-            display = Array(chosenWord.length).fill('_');
+            display = [];
+            for (let i = 0; i < chosenWord.length; i++) {
+                display.push(chosenWord[i] === ' ' ? ' ' : '_');
+            }
             guesses = [];
             lives = 6;
-            
+
             updateDisplay();
             document.getElementById('guessInput').disabled = false;
             document.getElementById('inputSection').style.display = 'block';
@@ -349,9 +352,11 @@
 
         function updateDisplay() {
             document.getElementById('hangman').innerHTML = stages[lives];
-            document.getElementById('wordDisplay').textContent = display.join(' ');
-            document.getElementById('livesInfo').textContent = `You have ${lives} lives left`;
-            document.getElementById('guessesList').textContent = 
+            // Add extra spacing between words by replacing spaces with double spaces
+            const displayText = display.map(char => char === ' ' ? '' : char).join(' ');
+            document.getElementById('wordDisplay').textContent = displayText;
+            document.getElementById('livesInfo').textContent = `You have ${lives} guesses left`;
+            document.getElementById('guessesList').textContent =
                 `Guesses you've made: ${guesses.join(', ').toUpperCase() || 'None yet'}`;
         }
 

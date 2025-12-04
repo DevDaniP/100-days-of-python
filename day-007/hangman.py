@@ -1,4 +1,8 @@
 import random 
+
+# we need to fix the dynamic sizing of the word... resize it to fit mobile   
+# change it to guesses and last round is guess 
+
 stages = [r'''
   +---+
   |   |

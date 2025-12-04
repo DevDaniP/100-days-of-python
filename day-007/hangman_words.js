@@ -49,7 +49,7 @@ const wordCategories = {
   "denmark", "sweden", "finland", "iceland", "ireland",
   "england", "scotland", "wales", "poland", "czechrepublic",
   "slovakia", "slovenia", "croatia", "serbia", "romania",
-  "bulgaria", "greece", "turkey", "saudiarabia", "unitedarabemirates",
+  "bulgaria", "greece", "turkey", "saudiarabia", "united arab emirates",
   "qatar", "egypt", "morocco", "kenya", "southafrica"
 ]
 ,
@@ -149,9 +149,9 @@ const wordCategories = {
   "snow", "sleet", "fog", "frost", "icestorm",
   "windstorm", "duststorm", "sandstorm", "monsoon", "cyclone",
   "typhoon", "thunder", "lightning", "rain", "showers",
-  "cloudy", "sunny", "partlycloudy", "clear", "gust",
+  "cloudy", "sunny", "partly cloudy", "clear", "gust",
   "breeze", "gale", "squall", "chill", "coldwave",
-  "warmfront", "coldfront", "dew", "flood", "tide",
+  "warm front", "cold front", "dew", "flood", "tide",
   "whirlwind", "microburst", "hail", "drifting", "foggy",
   "muggy", "humid", "overheating", "stormy", "freezing"
 ]
@@ -198,9 +198,9 @@ const wordCategories = {
   VideoGames: [
   "minecraft", "fortnite", "overwatch", "skyrim", "zelda",
   "halo", "doom", "pokemon", "starcraft", "roblox",
-  "callofduty", "apexlegends", "leagueoflegends", "dota2", "worldofwarcraft",
-  "minecraftdungeons", "terraria", "stardewvalley", "fifa", "madden",
-  "grandtheftauto", "reddeadredemption", "witcher3", "cyberpunk2077", "amongus",
+  "call of duty", "apex legends", "league of legends", "dota 2", "world of warcraft",
+  "minecraft dungeons", "terraria", "stardew valley", "fifa", "madden",
+  "grand theft auto", "red dead redemption", "witcher 3", "cyberpunk", "amongus",
   "fallguys", "subnautica", "ark", "rust", "valheim",
   "darksouls", "eldenring", "portal", "half-life", "bioshock",
   "residentevil", "silentHill", "metroid", "donkeykong", "supermario",
